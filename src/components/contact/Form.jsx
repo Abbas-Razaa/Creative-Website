@@ -29,7 +29,7 @@ export default function Form() {
   } = useForm();
 
   const sendEmail = (params) => {
-    // const toastId = toast.loading("Sending your message, please wait...");
+    const toastId = toast.loading("Sending your message, please wait...");
 
     // toast.info(
     //   "Form submissions are demo-only here. Please checkout the final code repo to enable it. If you want to connect you can reach out to me via codebucks27@gmail.com.",
@@ -54,22 +54,20 @@ export default function Form() {
       )
       .then(
         () => {
-          console.log("SUCCESS!");
-          // toast.success(
-          //   "I have received your message, I will get back to you soon!",
-          //   {
-          //     id: toastId,
-          //   }
-          // );
+          toast.success(
+            "I have received your message, I will get back to you soon!",
+            {
+              id: toastId,
+            }
+          );
         },
         (error) => {
-          console.log("FAILED...", error.text);
-          // toast.error(
-          //   "There was an error sending your message, please try again later!",
-          //   {
-          //     id: toastId,
-          //   }
-          // );
+          toast.error(
+            "There was an error sending your message, please try again later!",
+            {
+              id: toastId,
+            }
+          );
         }
       );
   };
