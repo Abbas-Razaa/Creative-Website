@@ -81,7 +81,7 @@ const AboutDetails = () => {
             loading="lazy"
           />
         </ItemLayout>
-        
+
         <ItemLayout className={"col-span-full md:col-span-6 !p-0"}>
           <Link
             href="https://github.com/Abbas-Razaa/MERN-website"

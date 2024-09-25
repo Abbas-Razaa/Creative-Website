@@ -6,7 +6,7 @@ const item = {
   show: { opacity: 1, y: 0 },
 };
 
-const ProjectLink = motion(Link)
+const ProjectLink = motion(Link);
 const ProjectLayout = ({ name, description, date, demoLink }) => {
   return (
     <ProjectLink
