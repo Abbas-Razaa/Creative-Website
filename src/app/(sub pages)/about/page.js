@@ -33,8 +33,8 @@ export default function Home() {
           <h1 className="font-bold  text-5xl xs:text-6xl sm:text-7xl  lg:text-8xl text-accent">
             Abbas Raza
           </h1>
-          <p className="font-light text-foreground text-lg">
-            Meet the wizard behind this portfolio
+          <p className="font-light text-foreground text-md sm:text-lg">
+            Meet the mysterious behind this portfolio
           </p>
         </div>
       </div>
