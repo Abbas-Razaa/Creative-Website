@@ -15,6 +15,8 @@ module.exports = {
         foreground: 'rgb(var(--foreground))',
         muted: 'rgb(var(--muted))',
         accent: 'rgb(var(--accent))',
+        title:  'rgb(var(--title))',
+        page:  'rgb(var(--page))',
       },
       backgroundImage:{
         'firefly-radial': "radial-gradient(50% 50% at 50% 50%, rgba(23, 104, 255, 0.5) 0%, rgba(217,217,217, 0) 100%)"

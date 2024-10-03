@@ -7,7 +7,9 @@
     --background: 27 27 27;
     --foreground: 225 225 225;
     --muted: 115 115 115;
-    --accent: 56 139 255;
+    --accent: 30, 144, 255;
+    --title: 254 254 91;
+    --page: 173 216 230;
   }
 }
 

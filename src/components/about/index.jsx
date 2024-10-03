@@ -12,31 +12,32 @@ const AboutDetails = () => {
           }
         >
           <h2 className="  text-xl md:text-2xl text-left w-full capitalize">
-            Architect of Enchantment
+            Navigator of the Digital Cosmos
           </h2>
           <p className="font-light  text-xs sm:text-sm md:text-base   ">
-            My journey in web development is powered by an array of mystical
-            tools and languages, with JavaScript casting the core of my
-            enchantments. I wield frameworks like React.js and Next.js with
-            precision, crafting seamless portals (websites) that connect realms
-            (users) across the digital universe. The ancient arts of the
-            Jamstack empower me to create fast, secure, and dynamic experiences,
-            while my design skills ensure every creation is not only functional
-            but visually captivating. Join me as I continue to explore new
-            spells and technologies to shape the future of the web.
+            My expedition in web development is fueled by cutting-edge
+            technology, with JavaScript serving as the rocket that powers my
+            journey. I pilot frameworks like React.js and Next.js with
+            precision, building seamless portals (websites) that bridge galaxies
+            (users) across the vast digital expanse. The modern architecture of
+            Jamstack equips me to engineer fast, secure, and dynamic
+            experiences, while my design expertise ensures that each creation is
+            not only functional but a visual marvel. Join me as I explore
+            uncharted technologies and chart new courses in the digital
+            universe.
           </p>
         </ItemLayout>
 
         <ItemLayout
-          className={" col-span-full xs:col-span-6 lg:col-span-4 text-accent"}
+          className={" col-span-full xs:col-span-6 lg:col-span-4 text-title"}
         >
           <p className="font-semibold w-full text-left text-2xl sm:text-5xl">
-            25+ <sub className="font-semibold text-base">clients</sub>
+            10+ <sub className="font-semibold text-base">Real life Projects</sub>
           </p>
         </ItemLayout>
 
         <ItemLayout
-          className={"col-span-full xs:col-span-6 lg:col-span-4 text-accent"}
+          className={"col-span-full xs:col-span-6 lg:col-span-4 text-title"}
         >
           <p className="font-semibold w-full text-left text-2xl sm:text-5xl">
             2+{" "}

@@ -6,7 +6,7 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 
-export default function Wizard(props) {
+const Wizard = React.memo(function Wizard(props) {
   const { nodes, materials } = useGLTF("/models/66fbecba1d8443ae529df223.glb");
 
   const modelRef = useRef();
@@ -85,6 +85,7 @@ export default function Wizard(props) {
       />
     </group>
   );
-}
+});
 
+export default Wizard;
 useGLTF.preload("/models/66fbecba1d8443ae529df223.glb");

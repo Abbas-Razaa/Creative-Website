@@ -1,7 +1,11 @@
 import Image from "next/image";
 import bg from "../../../../public/background/contact-background.jpg";
 import Form from "@/components/contact/Form";
-
+import RenderModel from "@/components/RenderModel";
+import dynamic from "next/dynamic";
+const Satellite = dynamic(() => import("@/components/models/Satellite"), {
+  ssr: false,
+});
 export const metadata = {
   title: "Contact",
 };
@@ -9,6 +13,9 @@ export const metadata = {
 export default function Contact() {
   return (
     <>
+      <RenderModel>
+        <Satellite />
+      </RenderModel>
       <Image
         src={bg}
         alt="Next.js Portfolio website's contact page background image"
@@ -19,8 +26,8 @@ export default function Contact() {
 
       <article className="relative w-full flex flex-col items-center justify-center py-8 sm:py-0 space-y-8">
         <div className="flex flex-col items-center justify-center space-y-6 w-full sm:w-3/4">
-          <h1 className="text-accent font-semibold text-center text-4xl capitalize">
-            send a signal to the stars
+          <h1 className="text-page font-semibold text-center text-4xl capitalize">
+            Beam Your Message Into the Galaxy
           </h1>
           <p className="text-center font-light text-sm xs:text-base">
             Connect with the cosmos and send your message into the infinite
