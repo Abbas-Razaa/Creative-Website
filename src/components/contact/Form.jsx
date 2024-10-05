@@ -38,8 +38,6 @@ export default function Form() {
     //   }
     // );
 
-    // comment out the above toast.info and uncomment the below code to enable emailjs
-
     emailjs
       .send(
         process.env.NEXT_PUBLIC_SERVICE_ID,

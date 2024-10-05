@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
-import { useFrame } from "@react-three/fiber"; // Import useFrame
+import { useFrame } from "@react-three/fiber";
 
 const Model = React.memo(function Model(props) {
   const { nodes, materials } = useGLTF("/models/satellite-transformed.glb");
@@ -16,7 +16,7 @@ const Model = React.memo(function Model(props) {
 
   return (
     <group
-      ref={groupRef} 
+      ref={groupRef}
       {...props}
       dispose={null}
       position={[0, 0, 0]}

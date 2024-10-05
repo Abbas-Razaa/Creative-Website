@@ -8,19 +8,17 @@ const Model = React.memo(function Model(props) {
   const modelRef = useRef();
   const [position, setPosition] = useState([0.5, 0, 0]);
   const [scale, setScale] = useState([1.1, 1.1, 1.1]);
-  
+
   useFrame(() => {
     modelRef.current.rotation.y += 0.007;
   });
-  
-  const { nodes, materials } = useGLTF(
-    "/models/planet-transformed.glb"
-  );
-  
+
+  const { nodes, materials } = useGLTF("/models/planet-transformed.glb");
+
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 768) { 
-        setPosition([0, 0.4, 0]); 
+      if (window.innerWidth < 768) {
+        setPosition([0, 0.4, 0]);
         setScale([1.5, 1.5, 1.5]);
       } else {
         setPosition([0.5, 0.4, 0]);
