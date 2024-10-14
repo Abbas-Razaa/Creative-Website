@@ -62,9 +62,9 @@ export const projectsData = [
   {
     id: 7,
     name: "Chat Application",
-    description: "https://github.com/Abbas-Razaa/Chat-App",
+    description: "Developed a modern chat web app with Next.js and vanilla CSS, featuring smooth animations and real-time communication",
     date: "2023-April-28",
-    demoLink: "Developed a modern chat web app with Next.js and vanilla CSS, featuring smooth animations and real-time communication",
+    demoLink: "https://github.com/Abbas-Razaa/Chat-App",
   },
 ];
 
@@ -87,7 +87,7 @@ export const BtnList = [
   },
   {
     label: "LinkedIn",
-    link: "https://www.linkedin.com/in/abbas-raza-52116b254",
+    link: "https://www.linkedin.com/in/abbas-razaa",
     icon: "linkedin",
     newTab: true,
   },
