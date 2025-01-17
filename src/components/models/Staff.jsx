@@ -6,8 +6,8 @@ import { useFrame } from "@react-three/fiber";
 
 const Model = React.memo(function Model(props) {
   const modelRef = useRef();
-  const [position, setPosition] = useState([0.5, 0, 0]);
-  const [scale, setScale] = useState([1.1, 1.1, 1.1]);
+  const [position, setPosition] = useState([0, 0, 0]);
+  const [scale, setScale] = useState([1.2, 1.2, 1.2]);
 
   useFrame(() => {
     modelRef.current.rotation.y += 0.007;
@@ -21,8 +21,8 @@ const Model = React.memo(function Model(props) {
         setPosition([0, 0.4, 0]);
         setScale([1.5, 1.5, 1.5]);
       } else {
-        setPosition([0.5, 0.4, 0]);
-        setScale([1.15, 1.15, 1.15]);
+        setPosition([0, 0, 0]);
+        setScale([1.2, 1.2, 1.2]);
       }
     };
 

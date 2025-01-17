@@ -27,14 +27,16 @@ export default function Contact() {
       <article className="relative w-full flex flex-col items-center justify-center py-8 sm:py-0 space-y-8">
         <div className="flex flex-col items-center justify-center space-y-6 w-full sm:w-3/4">
           <h1 className="text-page font-semibold text-center text-4xl capitalize">
-            Beam Your Message Into the Galaxy
+            {/* Beam Your Message Into the Galaxy */}
+            Send Your Message
           </h1>
           <p className="text-center font-light text-sm xs:text-base">
-            Connect with the cosmos and send your message into the infinite
+            {/* Connect with the cosmos and send your message into the infinite
             expanse. Whether you are looking to explore new possibilities, ask
             questions, or share your thoughts, your transmission will be
             received by our crew. Fill out the form below, and let your words
-            travel light-years across the galaxy.
+            travel light-years across the galaxy. */}
+            Send your thoughts or questions, and I’ll make sure they’re heard. Whether you’re seeking guidance, sharing ideas, or just reaching out, I’m here to listen. Use the form below to send your message into the vast beyond.
           </p>
         </div>
         <Form />

@@ -31,13 +31,6 @@ export default function Form() {
   const sendEmail = (params) => {
     const toastId = toast.loading("Sending your message, please wait...");
 
-    // toast.info(
-    //   "Form submissions are demo-only here. Please checkout the final code repo to enable it. If you want to connect you can reach out to me via codebucks27@gmail.com.",
-    //   {
-    //     id: toastId,
-    //   }
-    // );
-
     emailjs
       .send(
         process.env.NEXT_PUBLIC_SERVICE_ID,
@@ -72,7 +65,7 @@ export default function Form() {
 
   const onSubmit = (data) => {
     const templateParams = {
-      to_name: "CodeBucks",
+      to_name: "AbbasRaza",
       from_name: data.name,
       reply_to: data.email,
       message: data.message,
@@ -145,7 +138,7 @@ export default function Form() {
 
         <motion.input
           variants={item}
-          value="launch your transmission!"
+          value="Send Message"
           className="px-10 py-4 rounded-md shadow-lg bg-background border border-accent/30 border-solid
       hover:shadow-glass-sm backdrop-blur-sm text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 cursor-pointer capitalize
       "
